@@ -227,6 +227,7 @@ dependencies = [
  "async-trait",
  "maelstrom-node",
  "serde_json",
+ "tokio",
  "uuid",
 ]
 

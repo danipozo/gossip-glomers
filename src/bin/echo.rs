@@ -1,7 +1,7 @@
 use std::sync::Arc;
 
 use async_trait::async_trait;
-use maelstrom::{Node, Runtime, Result, protocol::Message, done};
+use maelstrom::{done, protocol::Message, Node, Result, Runtime};
 
 pub(crate) fn main() -> Result<()> {
     Runtime::init(try_main())
