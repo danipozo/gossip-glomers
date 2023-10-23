@@ -225,9 +225,12 @@ name = "gossip-glomers"
 version = "0.1.0"
 dependencies = [
  "async-trait",
+ "futures",
+ "log",
  "maelstrom-node",
  "serde_json",
  "tokio",
+ "tokio-context",
  "uuid",
 ]
 

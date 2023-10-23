@@ -14,4 +14,4 @@ broadcast-multi: bins
 	maelstrom/maelstrom test -w broadcast --bin target/debug/broadcast-multi --node-count 5 --time-limit 20 --rate 10
 
 broadcast-fault-tolerant: bins
-	maelstrom/maelstrom test -w broadcast --bin target/debug/broadcast-multi --node-count 5 --time-limit 20 --rate 10 --nemesis partition
+	maelstrom/maelstrom test -w broadcast --bin target/debug/broadcast-fault-tolerant --node-count 5 --time-limit 20 --rate 10 --nemesis partition
