@@ -26,3 +26,6 @@ broadcast-efficiency-one-partitions: bins
 
 broadcast-efficiency-two: bins
 	maelstrom/maelstrom test -w broadcast --bin target/$(MODE)/broadcast-efficiency-two --node-count 25 --time-limit 20 --rate 100 --latency 100
+
+grow-only-counter: bins
+	maelstrom/maelstrom test -w g-counter --bin target/$(MODE)/grow-only-counter --node-count 3 --rate 100 --time-limit 20 --nemesis partition
