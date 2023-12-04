@@ -29,3 +29,7 @@ broadcast-efficiency-two: bins
 
 grow-only-counter: bins
 	maelstrom/maelstrom test -w g-counter --bin target/$(MODE)/grow-only-counter --node-count 3 --rate 100 --time-limit 20 --nemesis partition
+
+single-node-kafka: bins
+	RUST_BACKTRACE=true maelstrom/maelstrom test -w  kafka --bin target/$(MODE)/single-node-kafka --node-count 1 --concurrency 2n --time-limit 20 --rate 1000
+
